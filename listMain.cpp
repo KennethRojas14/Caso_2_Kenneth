@@ -7,7 +7,7 @@
 #include "Caso_2.cpp"
 #include "listas/List.cpp"
 
-void executeTask(string&, List&);
+void executeTask(string, List);
 
 int main() {
     //Lista de Dispositivos-----------------------------------------------------------------------------------
@@ -57,6 +57,6 @@ int main() {
 
 };
 
-void executeTask(string& taskName, List listDevice){
+void executeTask(string taskName, List listDevice){
         cout << "La tarea "  << taskName << " con el dispositivo " << listDevice->showElement(0)->getDevice()<<endl;
     }
